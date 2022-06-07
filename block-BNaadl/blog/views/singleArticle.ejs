@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="flex details">
+      <h3 class="center">User details page</h3>
+      <h4 class="name"><%= article.title%></h4>
+      <h4 class="email"><%= article.description %></h4>
+      <h4 class="age"><%= article.tags %></h4>
+      <h4 class="age"><%= article.author %></h4>
+      <h4 class="bio"><%= article.likes %></h4>
+      <a class="update" href="/articles/<%= article.id %>/edit"> increment </a>
+      <a class="delete" href="/articles/<%= article.id %>/delete">
+        decrement
+      </a>
+      <a class="update" href="/articles/<%= article.id %>/edit"> edit </a>
+      <a class="delete" href="/articles/<%= article.id %>/delete"> delete </a>
+      <a class="update" href="/articles"> back </a>
+    </div>
+  </body>
+</html>
